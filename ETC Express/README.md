@@ -35,8 +35,8 @@ All the objects on both interfaces are documented in the `Interface Objects.csv`
 Any contributions would be greatly appriciated to improve on the interface or to add functionality. Check the To-Do list for topics to investigate.
 
 ## To-do
-[ ] Implement sliders as described on page 280 of the ETC Express manual using "Pitch Bend" messages
-[ ] Add text-field in the interface as a command-line (OSC program needed)
-[ ] Warnings when illegal (error) keypresses performed
-[ ] Better use of space
-[ ] Explore the use of Linux as proxy for console.
+* [ ] Implement sliders as described on page 280 of the ETC Express manual using "Pitch Bend" messages
+* [ ] Add text-field in the interface as a command-line (OSC program needed)
+* [ ] Warnings when illegal (error) keypresses performed
+* [ ] Better use of space
+* [ ] Explore the use of Linux as proxy for console.
