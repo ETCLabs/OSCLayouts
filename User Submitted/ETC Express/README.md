@@ -1,4 +1,4 @@
-![ETC Express](http://www.etcconnect.com/uploadedImages/Main_Site/Images/Products/Consoles/Express72-144.jpg?n=5600)
+![ETC Express](http://www.etcconnect.com/uploadedImages/Main_Site/Images/Products/Consoles/Express72-144.jpg)
 # ETC Express Mobile Layout
 
 Even though the [ETC Express](http://www.etcconnect.com/Support/Consoles/Legacy/Express/) is a legacy product, it is still being used. These layouts are to create a way to control the board very easily and wirelessly. As the age of the console disallows the current methods of wireless control used by the [ETC Eos Family](http://www.etcconnect.com/Products/Consoles/Eos-Family/), these layouts uses roundabout ways of control.
@@ -20,7 +20,7 @@ A non-Windows computer may possibly be used, but MIDI-OX has not been tested for
 4. Open touchOSC Bridge and touchOSC
 5. Create new configuration in MIDI-OX connecting the Board (probably called USB or some variation) as output to touchOSC Bridge as input
 6. Install interface on device and set output to computer. (Detailed instructions [here](http://hexler.net/docs/touchosc))
-7. Create all macros as specified in `Macros.csv`
+7. Create all macros as specified in `Macros.csv`, **or** import the `SHOW.shw` show file to the board.
 8. Enjoy.
 
 ## Further documentation
