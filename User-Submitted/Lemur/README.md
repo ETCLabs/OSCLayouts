@@ -11,17 +11,16 @@
 ###Attribute Editor (WIP) 
 + Softkeys 
 + Pan/Tilt Dials 
-+ Fine/Coarse Level Wheel 
 
 ###Command Wing 
-+ Fine/Coarse Level Wheel 
 + Full Keyboard Controls 
 + Color Seperation for easier Orientation 
 
-**also:** 
+###on every Tab:###
++ Fine/Coarse Level Wheel 
 + Full Command Line Feedback on every Tab, 
 + Live / Blind toggle & feedback 
-+ Battery Monitor (press to show bigger percentage) 
++ Battery Monitor (press to show percentage) 
 
-… optimized for iPad Mini 
+**… optimized for iPad Mini**
 
