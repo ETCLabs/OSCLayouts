@@ -13,13 +13,18 @@
 + Softkeys 
 + Pan/Tilt Dials 
 
+###Direct Selects
++ Dual 25 DS Containers with Flexi
++ Pages
++ support for Groups,Presets,Int-,Color-,Beam-Palettes & FX – more to follow
+
 ###Command Wing 
 + Full Keyboard Controls 
 + Color Seperation for easier Orientation 
 
 ###on every Tab:###
 + Fine/Coarse Level Wheel 
-+ Full Command Line Feedback on every Tab, 
++ Full Command Line Feedback on every Tab, touch the Command Line to clear it! 
 + Live / Blind toggle & feedback 
 + Battery Monitor (press to show percentage) 
 
