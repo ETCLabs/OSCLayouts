@@ -1,6 +1,6 @@
 <JZML>
 <PROJECT version="5320" width="1024" height="724" osc_target="-1" midi_target="-1" kbmouse_target="-1" skin="Classic"/>
-<WINDOW class="JAZZINTERFACE" text="Attributes" x="0" y="0" width="1024" height="724" id="3" state="1" group="0" font="tahoma,11,0" >
+<WINDOW class="JAZZINTERFACE" text="Attributes" x="0" y="0" width="1024" height="724" id="3" state="0" group="0" font="tahoma,11,0" >
 <WINDOW class="Container" text="numbox7" x="324" y="191" width="322" height="533" id="18" state="1" group="0" font="tahoma,10,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="1596013" label="1" tabbar="1" meta="0">
 <WINDOW class="CustomButton" text="num_1" x="0" y="312" width="100" height="100" id="9" state="241" group="0" font="tahoma,24,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="1" bitmap="0,0" capture="1" color="8300,1929855" label_off="1" label_on="1" outline="1">
 <PARAM name="x=" value="0.000000" send="25" osc_target="-2" osc_trigger="1" osc_message="/eos/key/1" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -262,7 +262,7 @@ canvas_refresh(BattDisplay);" trigger_script="" trigger_type="255" trigger_name=
 
 canvas_refresh(BattDisplay);" trigger_script="" trigger_type="255" trigger_name="onCursorUp" trigger="1" clock="0" clock_div="4" osc_message="/CommandLineContainer1/BattDisplay/up" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
-<WINDOW class="Text" text="CommandLine" x="0" y="0" width="929" height="64" id="43" state="213" group="0" font="tahoma,23,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="14474240" content="LIVE: Cue  0.5 : Group 1 + Group 1 + Group 1 + Group 1 ">
+<WINDOW class="Text" text="CommandLine" x="0" y="0" width="929" height="64" id="43" state="213" group="0" font="tahoma,23,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="14474240" content="LIVE:">
 <VARIABLE name="light=0" send="0" osc_target="1" osc_trigger="1" osc_message="/CommandLineContainer1/CommandLine/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <SCRIPT name="osc_input(OSC_ARGS)" script="decl string='' + OSC_ARGS[0];
 setattribute(CommandLine,'content',string);" trigger_script="" trigger_type="2" trigger="1" clock="0" clock_div="4" osc_message="/eos/out/cmd" midi_message="0x90,0x90,0,0" midi_target="-1" flag="9"/>
@@ -401,7 +401,7 @@ canvas_refresh(BattDisplay);" trigger_script="" trigger_type="255" trigger_name=
 
 canvas_refresh(BattDisplay);" trigger_script="" trigger_type="255" trigger_name="onCursorUp" trigger="1" clock="0" clock_div="4" osc_message="/CommandLineContainer2/BattDisplay/up" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
-<WINDOW class="Text" text="CommandLine" x="0" y="0" width="929" height="64" id="33" state="213" group="0" font="tahoma,23,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="14474240" content="LIVE: Cue  0.5 : Group 1 + Group 1 + Group 1 + Group 1 ">
+<WINDOW class="Text" text="CommandLine" x="0" y="0" width="929" height="64" id="33" state="213" group="0" font="tahoma,23,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="14474240" content="LIVE:">
 <VARIABLE name="light=0" send="0" osc_target="1" osc_trigger="1" osc_message="/CommandLineContainer2/CommandLine/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <SCRIPT name="osc_input(OSC_ARGS)" script="decl string='' + OSC_ARGS[0];
 setattribute(CommandLine,'content',string);" trigger_script="" trigger_type="2" trigger="1" clock="0" clock_div="4" osc_message="/eos/out/cmd" midi_message="0x90,0x90,0,0" midi_target="-1" flag="9"/>
@@ -810,7 +810,7 @@ oscout(1,target[1]+target[2]+target[3]+target[4]+target[5],1.);" trigger_script=
 <VARIABLE name="flexistate=" value="''" send="1" osc_target="0" osc_trigger="1" osc_message="/DirectSelects_A2/flexistate" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
 </WINDOW>
-<WINDOW class="JAZZINTERFACE" text="Faders" x="0" y="0" width="1024" height="724" state="0" group="0" font="tahoma,11,0" >
+<WINDOW class="JAZZINTERFACE" text="Faders" x="0" y="0" width="1024" height="724" state="1" group="0" font="tahoma,11,0" >
 <WINDOW class="CustomButton" text="stop" x="843" y="362" width="125" height="60" id="10" state="241" group="0" font="tahoma,24,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="1" bitmap="0,0" capture="1" color="6684672,8333352" label_off="stop" label_on="stop" outline="1">
 <PARAM name="x=" value="0.000000" send="25" osc_target="1" osc_trigger="1" osc_message="/eos/key/stop" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/stop/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -990,7 +990,7 @@ else {
 <PARAM name="x=" value="0.000000" send="25" osc_target="1" osc_trigger="1" osc_message="/eos/fader/1/4/fire" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Subfader4/fire/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
-<WINDOW class="Text" text="Faderlabel" x="0" y="8" width="96" height="35" id="37" state="245" group="0" font="tahoma,18,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="4474085" content="S4 FX">
+<WINDOW class="Text" text="Faderlabel" x="0" y="8" width="96" height="35" id="37" state="245" group="0" font="tahoma,18,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="4474085" content="S4">
 <VARIABLE name="light=0" send="0" osc_target="1" osc_trigger="1" osc_message="/Subfader4/Faderlabel/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <SCRIPT name="osc_input(OSC_ARGS)" script="decl string='' + OSC_ARGS[0];
 setattribute(Faderlabel,'content',string);" trigger_script="" trigger_type="2" trigger="1" clock="0" clock_div="4" osc_message="/eos/out/fader/1/4/name" midi_message="0x90,0x90,0,0" midi_target="-1" flag="9"/>
@@ -1025,7 +1025,7 @@ else {
 <PARAM name="x=" value="0.000000" send="25" osc_target="1" osc_trigger="1" osc_message="/eos/fader/1/7/fire" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Subfader6/CustomButton2/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
-<WINDOW class="Text" text="Faderlabel" x="0" y="8" width="96" height="35" id="37" state="245" group="0" font="tahoma,18,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="4474085" content="S7 Audience">
+<WINDOW class="Text" text="Faderlabel" x="0" y="8" width="96" height="35" id="37" state="245" group="0" font="tahoma,18,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="4474085" content="S7">
 <VARIABLE name="light=0" send="0" osc_target="1" osc_trigger="1" osc_message="/Subfader6/Faderlabel/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <SCRIPT name="osc_input(OSC_ARGS)" script="decl string='' + OSC_ARGS[0];
 setattribute(Faderlabel,'content',string);" trigger_script="" trigger_type="2" trigger="1" clock="0" clock_div="4" osc_message="/eos/out/fader/1/7/name" midi_message="0x90,0x90,0,0" midi_target="-1" flag="9"/>
@@ -1060,7 +1060,7 @@ else {
 <PARAM name="x=" value="0.000000" send="25" osc_target="1" osc_trigger="1" osc_message="/eos/fader/1/8/fire" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Subfader7/fire/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
-<WINDOW class="Text" text="Faderlabel" x="0" y="10" width="96" height="35" id="37" state="245" group="0" font="tahoma,18,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="4474085" content="S8 Bax">
+<WINDOW class="Text" text="Faderlabel" x="0" y="10" width="96" height="35" id="37" state="245" group="0" font="tahoma,18,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="4474085" content="S8">
 <VARIABLE name="light=0" send="0" osc_target="1" osc_trigger="1" osc_message="/Subfader7/Faderlabel/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <SCRIPT name="osc_input(OSC_ARGS)" script="decl string='' + OSC_ARGS[0];
 setattribute(Faderlabel,'content',string);" trigger_script="" trigger_type="2" trigger="1" clock="0" clock_div="4" osc_message="/eos/out/fader/1/8/name" midi_message="0x90,0x90,0,0" midi_target="-1" flag="9"/>
@@ -1095,7 +1095,7 @@ else {
 <PARAM name="x=" value="0.000000" send="25" osc_target="1" osc_trigger="1" osc_message="/eos/fader/1/5/fire" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Subfader5/fire/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
-<WINDOW class="Text" text="Faderlabel" x="0" y="8" width="96" height="35" id="37" state="245" group="0" font="tahoma,18,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="4474085" content="S5 T Front">
+<WINDOW class="Text" text="Faderlabel" x="0" y="8" width="96" height="35" id="37" state="245" group="0" font="tahoma,18,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="4474085" content="S5">
 <VARIABLE name="light=0" send="0" osc_target="1" osc_trigger="1" osc_message="/Subfader5/Faderlabel/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <SCRIPT name="osc_input(OSC_ARGS)" script="decl string='' + OSC_ARGS[0];
 setattribute(Faderlabel,'content',string);" trigger_script="" trigger_type="2" trigger="1" clock="0" clock_div="4" osc_message="/eos/out/fader/1/5/name" midi_message="0x90,0x90,0,0" midi_target="-1" flag="9"/>
@@ -1130,7 +1130,7 @@ else {
 <PARAM name="x=" value="0.000000" send="25" osc_target="1" osc_trigger="1" osc_message="/eos/fader/1/6/fire" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Subfader8/fire/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
-<WINDOW class="Text" text="Faderlabel" x="0" y="8" width="96" height="35" id="37" state="245" group="0" font="tahoma,18,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="4474085" content="S6 Work">
+<WINDOW class="Text" text="Faderlabel" x="0" y="8" width="96" height="35" id="37" state="245" group="0" font="tahoma,18,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="4474085" content="S6">
 <VARIABLE name="light=0" send="0" osc_target="1" osc_trigger="1" osc_message="/Subfader8/Faderlabel/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <SCRIPT name="osc_input(OSC_ARGS)" script="decl string='' + OSC_ARGS[0];
 setattribute(Faderlabel,'content',string);" trigger_script="" trigger_type="2" trigger="1" clock="0" clock_div="4" osc_message="/eos/out/fader/1/6/name" midi_message="0x90,0x90,0,0" midi_target="-1" flag="9"/>
@@ -1257,7 +1257,7 @@ canvas_refresh(BattDisplay);" trigger_script="" trigger_type="255" trigger_name=
 
 canvas_refresh(BattDisplay);" trigger_script="" trigger_type="255" trigger_name="onCursorUp" trigger="1" clock="0" clock_div="4" osc_message="/CommandLineContainer3/BattDisplay/up" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
-<WINDOW class="Text" text="CommandLine" x="0" y="0" width="929" height="64" id="43" state="213" group="0" font="tahoma,23,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="14474240" content="LIVE: Cue  0.5 : Group 1 + Group 1 + Group 1 + Group 1 ">
+<WINDOW class="Text" text="CommandLine" x="0" y="0" width="929" height="64" id="43" state="213" group="0" font="tahoma,23,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="14474240" content="LIVE: ">
 <VARIABLE name="light=0" send="0" osc_target="1" osc_trigger="1" osc_message="/CommandLineContainer3/CommandLine/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <SCRIPT name="osc_input(OSC_ARGS)" script="decl string='' + OSC_ARGS[0];
 setattribute(CommandLine,'content',string);" trigger_script="" trigger_type="2" trigger="1" clock="0" clock_div="4" osc_message="/eos/out/cmd" midi_message="0x90,0x90,0,0" midi_target="-1" flag="9"/>
@@ -1725,7 +1725,7 @@ canvas_refresh(BattDisplay);" trigger_script="" trigger_type="255" trigger_name=
 
 canvas_refresh(BattDisplay);" trigger_script="" trigger_type="255" trigger_name="onCursorUp" trigger="1" clock="0" clock_div="4" osc_message="/CommandLineContainer4/BattDisplay/up" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
-<WINDOW class="Text" text="CommandLine" x="0" y="0" width="929" height="64" id="43" state="213" group="0" font="tahoma,23,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="14474240" content="LIVE: Cue  0.5 : Group 1 + Group 1 + Group 1 + Group 1 ">
+<WINDOW class="Text" text="CommandLine" x="0" y="0" width="929" height="64" id="43" state="213" group="0" font="tahoma,23,0" send="1" osc_target="1" midi_target="-2" kbmouse_target="-2" color="14474240" content="LIVE:">
 <VARIABLE name="light=0" send="0" osc_target="1" osc_trigger="1" osc_message="/CommandLineContainer4/CommandLine/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <SCRIPT name="osc_input(OSC_ARGS)" script="decl string='' + OSC_ARGS[0];
 setattribute(CommandLine,'content',string);" trigger_script="" trigger_type="2" trigger="1" clock="0" clock_div="4" osc_message="/eos/out/cmd" midi_message="0x90,0x90,0,0" midi_target="-1" flag="9"/>
