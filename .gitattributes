@@ -1,9 +1,12 @@
 # Git attributes
 
-# To diff .pdf and .touchosc files, install pdftotext
+# To diff .pdf and .touchosc files:
+# Install pdftotext, xmllint,
+# create a command on your path with:
+# `unzip -a -c $1 | sed 1d | sed 1d | xmllint --format -`
 # and run these commands:
 # $ git config diff.pdf.textconv pdftotxt
-# $ git config diff.touchosc.textconv unzip
+# $ git config diff.touchosc.textconv (your script)
 
 *.pdf diff=pdf
 *.touchosc diff=touchosc
