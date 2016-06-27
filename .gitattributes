@@ -1,0 +1,9 @@
+# Git attributes
+
+# To diff .pdf and .touchosc files, install pdftotext
+# and run these commands:
+# $ git config diff.pdf.textconv pdftotxt
+# $ git config diff.touchosc.textconv unzip
+
+*.pdf diff=pdf
+*.touchosc diff=touchosc
