@@ -1,0 +1,4 @@
+# Git Ignore file
+
+# Mac OS X (macOS) files
+*.DS_Store
