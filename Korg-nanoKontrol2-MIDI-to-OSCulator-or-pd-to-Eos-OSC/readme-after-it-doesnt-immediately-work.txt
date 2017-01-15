@@ -22,4 +22,4 @@ Run Eos as normal, setting it up to receive OSC as documented in the manual/Show
 
 Good luck!
 Luke
-luke.delwiche@etcconnect.com
+lukedelwiche@gmail.com
